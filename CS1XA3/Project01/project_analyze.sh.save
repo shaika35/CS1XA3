@@ -15,6 +15,4 @@ for item in ${command[@]}; do
 	fi
 done
 
-function checkerrorS () {
-find -name "*.py" | xargs -I {} ghc -fno-code {} &> error.log
-}
+function checkerrorS () {find -name "*.py" | xargs -I {} ghc -fno-code {} &> error.log}
